@@ -22,7 +22,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -32,7 +32,7 @@ public class MainActivity2 extends AppCompatActivity {
         editInput = findViewById(R.id.edit_input);
         textResult = findViewById(R.id.text_result);
         button = findViewById(R.id.btn_output);
-        btn_output.setOnClickListener(btnOutputListener);
+        button.setOnClickListener(btnOutputListener);
     }
     View.OnClickListener btnOutputListener = new View.OnClickListener(){
 

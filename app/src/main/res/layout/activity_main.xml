@@ -22,7 +22,8 @@
         android:layout_weight="1"
         android:background="#0000ff"
         android:orientation="horizontal"
-        ></LinearLayout>
+        >
+    </LinearLayout>
 
 
 </LinearLayout>
